@@ -1,0 +1,28 @@
+{
+    "name": "battery Alert",
+    "enabled": true,
+    "conditions": [
+        {
+            "type": "is_charging",
+            "params": {
+                "value": false
+            }
+        },
+        {
+            "type": "battery_level",
+            "params": {
+                "comparison": "less_than",
+                "value": 30
+            }
+        }
+    ],
+    "actions": [
+        {
+            "type": "show_notification",
+            "params": {
+                "title": "Alert!",
+                "message": "\"Battery is below 30% and you're not charging!\""
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Charging Status",
+    "enabled": true,
+    "conditions": [
+        {
+            "type": "is_charging",
+            "params": {
+                "value": true
+            }
+        }
+    ],
+    "actions": [
+        {
+            "type": "tts",
+            "params": {
+                "text": "Charging started."
+            }
+        },
+        {
+            "type": "play_sound",
+            "params": {
+                "path": "E:\\Amusements\\code\\calendar\\Sounds\\default.wav"
+            }
+        }
+    ],
+    "original_filename": "charging_status.json"
+}
